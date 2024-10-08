@@ -1,0 +1,37 @@
+/* variables */
+
+@use "./functions" as func;
+
+$bg-color: #ECF0F1;
+$bg-very-light: func.tint($bg-color, 50%);
+$bg-light: func.tint($bg-color, 25%);
+$bg-medium: $bg-color;
+$bg-dark: func.shade($bg-color, 25%);
+$bg-very-dark: func.shade($bg-color, 50%);
+
+
+$primary-color: navy;
+$primary-very-light: func.tint($primary-color, 50%);
+$primary-light: func.tint($primary-color, 25%);
+$primary-medium: $primary-color;
+$primary-dark: func.shade($primary-color, 25%);
+$primary-very-dark: func.shade($primary-color, 50%);
+
+$accent1: Blue;
+$accent1-ultra-light: func.tint($accent1, 75%);
+$accent1-very-light: func.tint($accent1, 50%);
+$accent1-light: func.tint($accent1, 25%);
+$accent1-medium: $accent1;
+$accent1-dark: func.shade($accent1, 25%);
+$accent1-very-dark: func.shade($accent1, 50%);
+
+$accent2: Green;
+$accent2-very-light: func.tint($accent2, 50%);
+$accent2-light: func.tint($accent2, 25%);
+$accent2-medium: $accent2;
+$accent2-dark: func.shade($accent2, 25%);
+$accent2-very-dark: func.shade($accent2, 50%);
+
+$link: #e67e22;
+
+$txt-color: #34495e;

@@ -1,0 +1,61 @@
+/* typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$font: "Poppins", serif;
+
+// body font styling vars
+$body-font-size: 120%;
+$body-font-weight: 350;
+$body-italic-weight: 100;
+
+// display font styling vars
+$display-font: $font;
+$display-weight: 900;
+$display-spacing: 0.15em;
+$display-title-size: 4rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$font2: "Roboto", sans-serif;
+
+// body font styling vars
+$body-font-size: 120%;
+$body-font-weight: 350;
+$body-italic-weight: 100;
+
+// display font styling vars
+$display-font: $font;
+$display-weight: 900;
+$display-spacing: 0.15em;
+$display-title-size: 4rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+$font3: "Afacad Flux", sans-serif;
+
+// body font styling vars
+$body-font-size: 120%;
+$body-font-weight: 350;
+$body-italic-weight: 100;
+
+// display font styling vars
+$display-font: $font;
+$display-weight: 900;
+$display-spacing: 0.15em;
+$display-title-size: 4rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+$lit: "Edu Australia VIC WA NT Hand Guides", sans-serif;
+
+// body font styling vars
+$body-font-size: 120%;
+$body-font-weight: 350;
+$body-italic-weight: 100;
+
+// display font styling vars
+$display-font: $font;
+$display-weight: 900;
+$display-spacing: 0.15em;
+$display-title-size: 4rem;

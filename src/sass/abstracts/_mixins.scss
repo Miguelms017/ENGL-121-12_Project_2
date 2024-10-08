@@ -1,0 +1,42 @@
+/* mixins */
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin horiz-with-gap{
+  @include flex-center-horiz;
+  gap: 2em;
+}
+
+@mixin space-cards{
+  margin: 1em;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+@mixin space-btn{
+  margin-top: 1.5em;
+}

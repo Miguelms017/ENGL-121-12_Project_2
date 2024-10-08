@@ -1,0 +1,166 @@
+/* home */
+@use "../abstracts/variables" as var;
+@use "../base/typography" as type;
+@use "../components/cards";
+@import "../abstracts/mixins";
+
+body {
+  font-family: type.$font3;
+  background-color: var.$bg-very-light;
+  font-size:1.1em;
+}
+
+h1 {
+  font-family: type.$font;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  padding-bottom: 0.75em;
+}
+h2{
+  font-family: type.$font;
+  color: var.$primary-very-light;
+  text-align: center;
+  padding-bottom: 1em;
+}
+h3{
+  font-family: type.$font2;
+  color: white;
+  font-size: 2.15em;
+  text-align: center;
+}
+h4{
+  font-family: type.$font2;
+  color: var.$accent1-ultra-light;
+  font-size: 1.2em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+p{
+  margin-bottom: 1em;
+}
+.card2{
+  &__content{
+    &__title{
+      h3{
+        padding-bottom: 1em;
+      }
+    }
+    &__img{
+      img{
+        max-width: 200em;
+        width:auto;
+        height:auto;
+      }
+    }
+  }
+}
+.card3{
+  &__content{
+    &__img{
+      img{
+        max-height: 200em;
+        width:auto;
+        height:auto;
+      }
+    }
+    &__text{
+      &__bible{
+        padding: 2em;
+        padding-right: 4em;
+        .lecture{
+          text-align: right;
+          margin-top: 1em;
+          margin-right: -2em;
+        }
+      }
+      &__link{
+        margin-top: 1.5em;
+      }
+    }
+  }
+}
+.card4{
+  &__content{
+    &__img{
+      img{
+          max-width: 200em;
+          width:auto;
+          height:auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .card2{
+    &__content{
+        @include horiz-with-gap;
+        &__text{
+          p{
+            max-width: 75ch;
+          }
+        }
+    }
+  }
+  .card3{
+    &__content{
+      @include horiz-with-gap;
+      &__text{
+        p{
+          max-width: 75ch;
+        }
+      }
+    }
+  }
+  .card4{
+    &__content{
+      @include horiz-with-gap;
+      &__text{
+        p{
+          max-width: 75ch;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 60em) {
+  main{
+    width: min(100% - 2rem, 60ch);
+    margin-inline: auto;
+    margin-block: 4rem;
+  }
+  .card2{
+    &__content{
+      &__img{
+        img{
+          max-width: 25em;
+          width:100%;
+          height:auto;
+        }
+      }
+    }
+  }
+  .card3{
+    &__content{
+      &__img{
+        img{
+          max-width: 25em;
+          width:100%;
+          height:auto;
+        }
+      }
+    }
+  }
+  .card4{
+    &__content{
+      &__img{
+        img{
+          max-width: 25em;
+          width:100%;
+          height:auto;
+        }
+      }
+    }
+  }
+}

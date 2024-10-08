@@ -1,0 +1,72 @@
+@use "../abstracts/variables" as var;
+@use "../base/typography" as type;
+@import "../abstracts/mixins";
+
+header, footer{
+    background-color: var.$primary-color;
+}
+
+.card1{
+    @include space-cards;
+    background-color: var.$accent1-dark;
+    color: white;
+}
+
+.card2{
+    @include space-cards;
+    background-color: var.$accent1-medium;
+    color: white;
+    &__content{
+        &__link{
+            @include space-btn;
+        } 
+    }
+}
+
+.card3{
+    @include space-cards;
+    background-color: var.$accent1-light;
+    color: white;
+    &__content{
+        &__text{
+            &__bible{
+                background-color: white;
+                color:black;
+            }
+        }
+       &__link{
+        @include space-btn;
+       } 
+    }
+}
+
+.card4{
+    @include space-cards;
+    background-color: var.$accent1-very-light;
+    &__content{
+        &__link{
+            @include space-btn;
+        } 
+    }
+}
+
+.card5{
+    @include space-cards;
+    background-color: var.$accent1-ultra-light;
+}
+.btn{
+    padding: 0.5em;
+    background-color: var.$link;
+    color:black;
+    transition: 0.3s;
+    &:hover, :focus{
+        background-color: var.$accent2-very-light;
+    }
+}
+footer{
+    @include flex-center-column;
+    color:white;
+    a{
+        color: var.$link;
+    }
+}
